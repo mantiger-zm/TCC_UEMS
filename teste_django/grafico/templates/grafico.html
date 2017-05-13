@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+
+{% block content %}
+	<section id="conteudo" >
+	<article id="noticiaprincipal">
+
+
+	<h1>Lista </h1>
+		
+
+
+
+
+		<div>
+			<table   border="2" ; cellpadding="10" ;  >
+				<thead bgcolor=#606060>
+					<tr>
+					<th >id</th> 
+					<th  > data </th>
+					<th  > Numero de ocorrencias </th>
+					<!--
+						<th>masc_infra</th>
+						<th>masc_infra_morto</th>
+						<th>masc_vit</th>
+						<th>masc_vit_morto</th>
+						<th>fem_infra</th>
+						<th>fem_infra_morto</th>
+						<th>fem_vit</th>
+						<th>fem_vit_morto</th>
+				-->
+					</tr>
+				</thead>
+				<tbody>
+				{% for Tabelagrafico in object_list %}
+					<tr>
+					<th > {{ Tabelagrafico.identificador }}</th> 
+					<th > {{ Tabelagrafico.data }} </th>
+					<th > {{ Tabelagrafico.nun_oco }} </th>
+					<!--
+					<th>{{ Tabelagrafico.masc_infra }}</th>
+					<th>{{ Tabelagrafico.masc_infra_morto }}</th>
+					<th>{{ Tabelagrafico.masc_vit }}</th>
+					<th>{{ Tabelagrafico.masc_vit_morto }}</th>
+					<th>{{ Tabelagrafico.fem_infra }}</th>
+					<th>{{ Tabelagrafico.fem_infra_morto }}</th>
+					<th>{{ Tabelagrafico.fem_vit }}</th>
+					<th>{{ Tabelagrafico.fem_vit_morto }}</th>
+					-->
+					</tr>
+				</tbody>	
+				{% empty %}
+					<p>Sem itens na lista.</p>
+				{% endfor %}
+
+				
+			</table>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+	</article>
+	</section>
+
+	    
+
+
+
+
+{% endblock content %}

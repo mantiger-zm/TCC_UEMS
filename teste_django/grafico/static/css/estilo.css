@@ -1,0 +1,234 @@
+
+
+@charset "UTF-8";
+@font-face {
+	font-family: 'fontlogo';
+	src: url("../_fonts/bubblegum-sans-regular.ttf");
+}
+
+		p{/* formato dos paragrafos */
+
+			text-align: justify; 
+			text-indent: 20px ;
+		}
+
+		body {
+			font-family: Arial , sans-serif ; /* fonte do texto */
+			background-image: url("../_imagens/fundo-teste.jpg");
+    		background-position: center center;
+    		background-size: cover;
+   			background-repeat: no-repeat;
+   			background-attachment: fixed;
+			color : black;
+		}
+
+
+
+		div#interface {
+			width: 70% ;
+			background-color: #ffffff ;
+			margin: -20px auto 0px auto ;
+			box-shadow:  2px 2px 6px black ;
+			padding: 5% 5% 5% 5% ;
+
+		}
+
+		header#cabecalho {
+			border-bottom: 2px #606060 solid ;/*borda */
+			background : url("../_imagens/fundo-teste-2.jpg") no-repeat -100px -200px ;/* pondo uma imagem */
+			margin: -20px auto 0px auto ;
+			width: 70% ;
+			height:  70% ;
+			
+			padding: 5% 5% 5% 5% ;
+			
+		}
+
+		header#cabecalho h1{
+			font-family: 'fontlogo' , sans-serif ; /* fonte do texto */
+			font-size: 40pt ;/*tamanho da font */
+			color: #606060 ;/* cor do texto */
+			text-shadow: 1px 1px 1px rgba(0,0,0,0.6); /* sombra do texto*/
+			padding: 0px 0px 0px 130px ; /*deslocamento*/
+			margin-bottom: 0px;/*distancia margem inferior */
+		}
+		header#cabecalho h2{/**/
+			font-family: 'fontlogo' , sans-serif ;/* fonte do texto */
+			font-size: 25pt ;/*tamanho da font */
+			color: #888888 ;/* cor do texto */
+			text-shadow: 1px 1px 1px rgba(0,0,0,0.6);/* sombra do texto*/
+			padding: 0px 0px 0px 170px ;/*deslocamento*/
+			margin-top: 0px;/*distancia margem superior  */
+		}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #2e2d2d;
+	
+}
+
+li {
+    float: left;
+
+}
+
+li a, .dropbtn {
+	font-family: 'fontlogo' , sans-serif ; /* fonte do texto */
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+    
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #565656;
+   
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+   background-color: #2e2d2d;
+    border: 1px #414040 solid;
+    min-width: 160px;
+    
+    z-index: 1;
+}
+
+.dropdown-content a {
+	font-family: 'fontlogo' , sans-serif ; /* fonte do texto */
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+
+}
+
+.dropdown-content a:hover {
+	background-color: #565656;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+
+
+		section#corpo {
+
+			display: block;
+			width: 45%;
+			float: left;
+			border-right: 1px solid #606060 ;
+			padding-right: 15px;
+			padding-bottom: 30px;
+
+
+		}
+
+		article#noticiaprincipal h2{
+			font-family: 'fontlogo' , sans-serif ; /* fonte do texto */
+			font-size: 12pt;
+			color: #606060;
+			background-color: #dddddd;
+			padding: 5px 0px 5px 10px ;
+			margin: 10px 0px 10px 0px;
+			box-shadow: 2px 2px 2px rgba(0 ,0 ,0,0.5);
+
+		}
+		
+		header#cabecalhoartigo h1{
+			font-family: 'fontlogo' , sans-serif ; /* fonte do texto */
+			font-size: 15pt ;/*tamanho da font */
+			color: #606060 ;/* cor do texto */
+			margin-bottom: 0px;
+			margin-top:  0px;
+
+		}
+		header#cabecalhoartigo h2{
+			
+			font-size: 13pt ;/*tamanho da font */
+			color: #cecece ;/* cor do texto */
+			background-color: #ffffff;
+			margin-top:  0px;
+			box-shadow: 2px 2px 2px rgba(0 ,0 ,0,0.0);
+			
+		}
+		header#cabecalhoartigo h3{
+			font-family: 'ariel' , sans-serif ; /* fonte do texto */
+			font-size: 8pt ;/*tamanho da font */
+			color: #606060 ;/* cor do texto */
+			
+		}
+		.direita{
+			text-align: right;
+		}
+
+
+
+		aside#lateral {
+			display: block;
+			width: 45%;
+			float: right;
+			background-color: #dddddd;
+			padding: 4% ;
+			margin-top: 4px ; 
+			box-shadow: 2px 2px 2px rgba(0 ,0 ,0,0.5);
+		}
+
+		aside#lateral h1{
+			font-family: 'fontlogo' , sans-serif ; /* fonte do texto */
+			font-size: 20pt ;/*tamanho da font */
+			color: #606060 ;/* cor do texto */
+			margin-bottom: 0px;
+
+		}
+
+		aside#lateral h2{
+			font-family: 'fontlogo' , sans-serif ; /* fonte do texto */
+			font-size: 12pt;
+			color: #ffffff;
+			background-color: #606060;
+			padding: 5px 0px 5px 10px ;
+			margin: 10px 0px 10px 0px;
+
+		}
+
+		footer#rodape{
+			clear : both ;
+			border-top:  1px solid #606060 ;
+			padding-top: 15px;
+
+		}
+
+		footer#rodape p{
+		text-align : center ;
+
+		}
+		footer#top{
+			clear : both ;
+			border-bottom: :  1px solid #606060 ;
+			padding-bottom: : 15px;
+			width: 80% ;
+			background-color: #ffffff ;
+			margin: -0px auto 0px auto ;
+			box-shadow:  2px 2px 6px black ;
+			padding: 0% 0px 22px 0px ;
+
+		}
+

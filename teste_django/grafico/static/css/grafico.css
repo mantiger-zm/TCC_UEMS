@@ -1,0 +1,33 @@
+
+
+@charset "UTF-8";
+@font-face {
+	font-family: 'fontlogo';
+	src: url("../_fonts/bubblegum-sans-regular.ttf");
+}
+
+section#conteudo {
+	width: 1000px ;
+	margin: auto;
+
+}
+iframe#frame-spec{
+
+	width: 380px;
+	height : 380px;
+	border: none;
+	overflow: hidden;
+
+}
+
+    div#box {
+        margin:  auto;
+        width: 70%;
+    }
+
+    .box-chart {
+        width: 60%;
+        margin: 60px auto;
+        padding: 10px;
+    }
+

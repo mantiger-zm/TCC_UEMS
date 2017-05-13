@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+
+{% block content %}
+	<section id="conteudo" >
+	<article id="noticiaprincipal">
+
+
+	<h1>Lista </h1>
+		
+   <form method="get" action="">
+    <input type="text"  placeholder="Digite aki" name="q" value="{{ request.GET.q}}">
+    <input type="submit" value="Busca" name="">     	
+
+    </form>
+    	
+		<div>
+			<table   border="2" ; cellpadding="10" ;  >
+				<thead bgcolor=#606060>
+					<tr>
+						<th>Info_local</th>
+						<th>Tipo_oco</th>
+					</tr>
+				</thead>
+				<tbody>
+				{% if resposta %}
+				{% for Tabelageral in resultado %}
+					<tr>
+					<th>
+					{{ Tabelageral.info_local }}
+					</th>
+					<th>{{ Tabelageral.tipo_oco }}</th>
+					</tr>
+				</tbody>
+				{% else %}
+				{% endif %}	
+				{% empty %}
+					<p>Sem itens na lista.</p>
+				{% endfor %}
+
+				
+			</table>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</article>
+	</section>
+
+	    
+
+
+
+
+{% endblock content %}

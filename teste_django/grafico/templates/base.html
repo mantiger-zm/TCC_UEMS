@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    
+    {% block title %}
+        <title>Título</title>
+    {% endblock title %}
+    <meta charset="utf-8">
+     
+     
+    <link href="../static/css/estilo.css" rel="stylesheet">
+    <link href="../static/css/grafico.css" rel="stylesheet">
+    
+</head>
+ <script src="../static/JavaScript/Chart.min.js"></script>
+
+
+<body >
+
+<header id = "cabecalho">
+
+    <hgroup>
+    <h1>Teste</h1>
+    <h2>Complemento de teste</h2>
+    </hgroup>
+
+    
+</header>
+
+<footer id="top">
+    <ul>
+  <li><a href="{% url 'home' %}">Home</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Lista</a>
+    <div class="dropdown-content">
+      <a href="{% url 'grafico' %}">Grafico Tabela</a>
+      <a href="{% url 'grafico2' %}">Grafico Geral</a>
+
+    </div>
+  </li>
+<li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Cadastro</a>
+    <div class="dropdown-content">
+    <a href="{% url 'contato' %}">Cadastro Tabela</a>
+      <a href="{% url 'cadastrogeral' %}">Cadastro Geral</a>
+    </div>
+  </li>
+</ul>
+
+    </footer>
+<div id= "interface">
+
+
+	{% block content %}
+		
+	{% endblock content %}
+
+   
+
+    <footer id="rodape">
+    <p>Copyright&copy; 2017 - by Guilherme H. V. Pereira e Matheus Z. Miranda</p>
+    <p>Facebook | Twitter</p>
+    </footer>
+
+
+</div>
+
+</body>
+</html>>
